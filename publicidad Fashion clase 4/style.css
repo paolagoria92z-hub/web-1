@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-principal);
+
+}
+
+body {
+  background: #ffffff;
+}
+
+.navbar ul li:last-child a{
+    padding: 3px 7px;
+    background-color: var(--color-principal);
+    color:var(--color-base);
+    border-radius: 3px;
+}
+  nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  }
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  align-items: center; 
+  gap: 35px;            
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+
+}
+
+.menu li {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+
+}
+
+.menu a {
+  align-items:left;  
+  text-decoration: none;
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.btn-signup {
+  display: inline-flex;    centra el texto dentro del botón 
+  align-items:center;
+  justify-content:center;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.hero {
+  display: flex;    
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;        
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.hero-text {
+  max-width: 430px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #111;
+}
+
+.highlight {
+  background: #ffe14d; /* el marcador amarillo detrás de "UNIQUE" */
+  padding: 0 8px;
+}
+
+.hero-text p {
+  margin: 18px 0 28px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.btn-shop {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hero-img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffe14d;
+  padding: 22px 40px;
+  margin: 0 60px 30px 60px;
+  border-radius: 12px;
+  flex-wrap: wrap; 
+}
+
+.brands span {
+  font-weight: bold;
+  font-size: 17px;
+  color: #111;
+}
+
+.new-arrivals {
+  padding: 0 60px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+  .frame {
+    margin: 20px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-img {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .menu {
+    display: none; /* se oculta el menú en móvil */
+  }
+  nav, .brands, .new-arrivals {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

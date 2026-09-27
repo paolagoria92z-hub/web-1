@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image:url(paisaje.jpg);
+  padding: 20px;
+}
+
+.pagina {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: green;
+  border: 2px solid #b5c4e6;
+  padding: 10px;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  background-color:white;
+  border: 2px solid #4a5f9e;
+  color: #1f2a55;
+  font-size: 28px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header  { height: 100px; margin-bottom: 10px; }
+nav     { height: 80px;  margin-bottom: 10px; }
+footer  { height: 80px;  margin-top: 10px; }
+
+.centro {
+  display: flex;
+  gap: 10px;
+  background-color: green;
+}
+
+.columna {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section,
+article {
+  flex: 1;
+  min-height: 200px;
+}
+
+aside {
+  flex: 1.2;
+}
+
+.layout{
+  background-image:url(paisaje.jpg) ;
+  background-size: cover;
+  background-position: center;
+  gap: 4px;
+  background-color: transparent;
+}

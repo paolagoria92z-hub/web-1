@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section-1{
+    background-color: #dedede;
+    width: 100%;
+}
+
+.conteiner{
+    display:flex;
+
+}
+
+.tarjeta{
+    background-color: green;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.tarjeta-1{
+ background-color: rgb(0, 128, 38);
+    width: 200px;
+    border: solid rgb(55, 0, 255) 10px;
+}
+
+.tarjeta-2{
+background-color: green;
+    width: 200px;
+    border: solid yellow;
+}
+
+
+.tarjeta-3{
+background-color: rgb(0, 128, 17);
+    width: 200px;
+    border: solid red 10px;
+}
+

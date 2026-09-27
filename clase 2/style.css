@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+   font-family: system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+   background: #a1e7c0;
+   padding: 2rem 1rem;
+   }
+  .contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #102c59;
+  text-align: center;
+  margin-bottom: 2rem;
+   }
+  .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  }
+  .producto {
+  background: #c0dee0;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: 1.25rem 1.25rem 1.5rem;
+  width: 250px;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  }
+  .producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.10);
+  }
+  .producto-imagen {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  background: #eef2f6;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  }
+  .producto h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.4rem 0;
+  }
+
+   .producto p {
+   font-size: 0.95rem;
+   color: #475569;
+   margin: 0 0 1rem 0;
+   flex-grow: 1;
+   }
+
+  .producto-footer {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  }
+
+  .precio {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  }
+
+  .boton {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem; 
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.20);
+  }
+/*botones de comprar, cambia de color*/
+ .boton:hover { background: #051c5b;
+        }
+
+  .boton:active {
+  transform: scale(0.96);
+  }
